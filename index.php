@@ -4,15 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>php</title>
-    <form action="" method="post" enctype="multipart/form-data">
+ 
+
+</head>
+<body>
+       <form action="" method="post" enctype="multipart/form-data">
     <input type="file" name="myfile">
 
     <input type="submit" name="submit">
 
 </form>
-
-</head>
-<body>
     <h1> hello</h1>
     <?php
     if (isset($_POST['submit'])) {
@@ -50,3 +51,4 @@
 </body>
 
 </html>
+
