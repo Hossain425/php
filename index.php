@@ -28,7 +28,7 @@
 
         $allow_extention = ['png', 'jpg',];
 
-  if($file_size < 5000000) {
+  if($file_size < 10000000) {
         if (in_array($file_extention, $allow_extention)) {
             $file_uplode = "image/" . $new_file_name;
             if(move_uploaded_file($file_temp,$file_uplode)){
@@ -40,7 +40,7 @@
             echo"only png,jpeg,jpg file allow";
         }
     }else{
-        echo"Only 5mb file allow";
+        echo"Only 10mb file allow";
     }
 
       echo "<pre>";
@@ -48,4 +48,5 @@
     echo "</pre>";
 ?>
 </body>
+
 </html>
